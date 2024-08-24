@@ -54,7 +54,7 @@ let amount = document.querySelector("form input");
         let data = await response.json();
        rate = data.rates[val]*amtval;
     
-        msg.innerText = `${amtval}  ${fromCurr.options[fromCurr.selectedIndex].text}=${rate}  ${ toCurr.options[toCurr.selectedIndex].text}`;
+        msg.innerText = `${amtval}  ${fromCurr.options[fromCurr.selectedIndex].text} = ${rate}  ${ toCurr.options[toCurr.selectedIndex].text}`;
     } 
 
     btn.addEventListener("click",(evt) =>{
