@@ -81,4 +81,5 @@ select,button{
     columns: grey;
     font-style: bold;
     color: red;
+    font-size: 20px;
 }
