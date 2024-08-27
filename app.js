@@ -47,9 +47,10 @@ let amount = document.querySelector("form input");
            let newImg = element.parentElement.querySelector("img");
            newImg.src = newSrc;
     }
-    let URL = `${BaseURL}${fromCurr.options[fromCurr.selectedIndex].text}`;
-    let val = toCurr.options[toCurr.selectedIndex].text;
+    
     let getData = async (amtval) =>{
+        let URL = `${BaseURL}${fromCurr.options[fromCurr.selectedIndex].text}`;
+    let val = toCurr.options[toCurr.selectedIndex].text;
         let response = await fetch(URL);
         let data = await response.json();
        rate = data.rates[val]*amtval;
